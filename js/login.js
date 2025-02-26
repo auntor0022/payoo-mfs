@@ -2,12 +2,16 @@
 document.getElementById("login-btn").addEventListener("click", function(event){
     event.preventDefault();
     const accountNumber = document.getElementById("account-number").value;
-    const convertedAccNo = parseInt(accountNumber);
     const pinNumber = getIdByValue("pin");
-    console.log(convertedAccNo);
+    console.log(accountNumber);
 
-    if(convertedAccNo.length === 11){
-        console.log("thik ache");
+    if(accountNumber.length === 11){
+        if(pinNumber === 1234){
+            window.location.href = "./main.html";
+        }
+        else{
+            console.log("Pin thik nai");
+        }
     }
     else{
         console.log("thik nai");
