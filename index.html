@@ -13,12 +13,33 @@
     <section class="max-w-md min-h-screen mx-auto bg-gray-200 py-6">
         <header>
             <nav class="mt-10 flex justify-center items-center">
-                <div class="flex justify-center items-center relative w-9/12 mb-10">
+                <div class="flex justify-center items-center relative w-9/12">
                     <img src="assets/Rectangle 1.png" alt="" >
                     <img src="assets/Group.png" alt="" class="absolute">
                 </div>
             </nav>
         </header>
+
+        <!-- login -->
+        <div class="">
+            <div class="hero-content flex-col lg:flex-row-reverse">
+              <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                <div class="card-body">
+                  <fieldset class="fieldset">
+                    <label class="fieldset-label">Mobile Number</label>
+                    <input id="account-number" value="12345678912" type="number" class="input" placeholder="Enter your number" required/>
+                    <label class="fieldset-label">4 Digit Pin</label>
+                    <input id="pin" type="text" value="1234" class="input" placeholder="Enter pin" required/>
+                    <button id="login-btn" class="btn btn-neutral mt-4">Login</button>
+                  </fieldset>
+                </div>
+              </div>
+            </div>
+          </div>
     </section>
+
+    <!-- JS -->
+     <script src="./js/utilities.js"></script>
+     <script src="./js/login.js"></script>
 </body>
 </html>
