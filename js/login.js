@@ -3,7 +3,6 @@ document.getElementById("login-btn").addEventListener("click", function(event){
     event.preventDefault();
     const accountNumber = document.getElementById("account-number").value;
     const pinNumber = getIdByValue("pin");
-    console.log(accountNumber);
 
     if(accountNumber.length === 11){
         if(pinNumber === 1234){

@@ -1,11 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Home</title>
+
+    <!-- daisyUi -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5.0.0-beta.8/daisyui.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body>
-    <h1>YESSS</h1>
+
+<body class="bg-stone-800">
+    <section class="max-w-md min-h-screen mx-auto bg-gray-200 py-6">
+        <header>
+            <nav class="flex items-center justify-around">
+                <img class="w-16" src="assets/Group.png" alt="">
+                <div class="space-y-1">
+                    <h1 class="text-3xl font-bold">$ 45000</h1>
+                    <p class="border rounded p-1">Available Balance</p>
+                </div>
+                <button class="btn bg-blue-500 rounded-md text-white text-lg">Logout</button>
+            </nav>
+        </header>
+
+        <section class="mt-8 p-5">
+            <h1 class="text-2xl font-bold">🔥 Welcome to Payooo!</h1>
+            <p class="mt-2 text-lg mb-6">Enjoy easy and convenient financial services with us. Cashout charge is low and
+            </p>
+
+            <div class="grid grid-cols-3 gap-4">
+                <div class="border rounded-lg flex flex-col justify-center items-center py-3">
+                    <img src="assets/wallet.png" alt="" class="w-7">
+                    <h3 class="">Add Money</h3>
+                </div>
+                <div class="border rounded-lg flex flex-col justify-center items-center py-3">
+                    <img src="assets/send.png" alt="" class="w-7">
+                    <h3 class="">Cashout</h3>
+                </div>
+                <div class="border rounded-lg flex flex-col justify-center items-center py-3">
+                    <img src="assets/money.png" alt="" class="w-7">
+                    <h3 class="">Transfer Money</h3>
+                </div>
+                <div class="border rounded-lg flex flex-col justify-center items-center py-3">
+                    <img src="assets/bonus.png" alt="" class="w-7">
+                    <h3 class="">Get Bonus</h3>
+                </div>
+                <div class="border rounded-lg flex flex-col justify-center items-center py-3">
+                    <img src="assets/purse.png" alt="" class="w-7">
+                    <h3 class="">Pay bill</h3>
+                </div>
+                <div class="border rounded-lg flex flex-col justify-center items-center py-3">
+                    <img src="assets/transaction.png" alt="" class="w-7">
+                    <h3 class="">Transaction</h3>
+                </div>
+            </div>
+        </section>
+
+        <!-- add-moneny -->
+        <section class="mt-8 p-5">
+            <fieldset class="fieldset w-full bg-base-200 border border-base-300 p-4 rounded-box ">
+                <h1 class="font-bold text-xl">Add Money</h1>
+
+                <fieldset class="fieldset">
+                    <legend class="fieldset-legend">Select A Bank</legend>
+                    <select class="select">
+                      <option disabled selected>Bkash</option>
+                      <option>Roket</option>
+                      <option>Nagad</option>
+                      <option>Upai</option>
+                    </select>
+                  </fieldset>
+                
+                <label class="fieldset-label">Bank Account Number</label>
+                <input type="text" class="input" placeholder="Enter 11 digit account number" />
+                
+                <label class="fieldset-label">Amount to Add</label>
+                <input type="text" class="input" placeholder="Add Amount to withdraw" />
+                
+                <label class="fieldset-label">Pin Number</label>
+                <input type="text" class="input" placeholder="Enter 4 digit pin number" />
+                <button id="login-btn" class="btn btn-neutral mt-4">Add Money</button>
+              </fieldset>
+        </section>
+
+        <!-- Cash-out -->
+        <section class="mt-8 p-5">
+            <fieldset class="fieldset w-full bg-base-200 border border-base-300 p-4 rounded-box ">
+                <h1 class="font-bold text-xl">Cashout</h1>
+
+                <fieldset class="fieldset">
+                    <legend class="fieldset-legend">Select A Bank</legend>
+                    <select class="select">
+                      <option disabled selected>Bkash</option>
+                      <option>Roket</option>
+                      <option>Nagad</option>
+                      <option>Upai</option>
+                    </select>
+                  </fieldset>
+                
+                <label class="fieldset-label">Bank Account Number</label>
+                <input type="text" class="input" placeholder="Enter 11 digit account number" />
+                
+                <label class="fieldset-label">Amount to Cashout</label>
+                <input type="text" class="input" placeholder="Add Amount to withdraw" />
+                
+                <label class="fieldset-label">Pin Number</label>
+                <input type="text" class="input" placeholder="Enter 4 digit pin number" />
+                <button id="login-btn" class="btn btn-neutral mt-4">Cashout</button>
+              </fieldset>
+        </section>
+
+    </section>
+
 </body>
+
 </html>
